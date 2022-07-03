@@ -82,7 +82,8 @@ class _CountryListPickState extends State<CountryListPick> {
             selectedItem,
             appBar: widget.appBar ??
                 AppBar(
-                  backgroundColor: Theme.of(context).appBarTheme.backgroundColor,
+                  backgroundColor:
+                      Theme.of(context).appBarTheme.backgroundColor,
                   title: Text("Select Country"),
                 ),
             theme: theme,
@@ -125,7 +126,10 @@ class _CountryListPickState extends State<CountryListPick> {
                   Flexible(
                     child: Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 5.0),
-                      child: Text(selectedItem.toString()),
+                      child: Text(
+                        selectedItem.toString(),
+                        style: TextStyle(color: widget.theme!.codeColor),
+                      ),
                     ),
                   ),
                 if (widget.theme?.isShowTitle ?? true == true)

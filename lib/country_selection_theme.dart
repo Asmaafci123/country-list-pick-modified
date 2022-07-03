@@ -14,22 +14,21 @@ class CountryTheme {
   final String? initialSelection;
   final bool? showEnglishName;
   final Color? labelColor;
-  final Color? codeColor;
+  final Color codeColor;
 
-  CountryTheme({
-    this.labelColor,
-    this.searchText,
-    this.searchHintText,
-    this.lastPickText,
-    this.alphabetSelectedBackgroundColor,
-    this.alphabetTextColor,
-    this.alphabetSelectedTextColor,
-    this.isShowTitle,
-    this.isShowFlag,
-    this.isShowCode,
-    this.isDownIcon,
-    this.initialSelection,
-    this.showEnglishName,
-    this.codeColor
-  });
+  CountryTheme(
+      {this.labelColor,
+      this.searchText,
+      this.searchHintText,
+      this.lastPickText,
+      this.alphabetSelectedBackgroundColor,
+      this.alphabetTextColor,
+      this.alphabetSelectedTextColor,
+      this.isShowTitle,
+      this.isShowFlag,
+      this.isShowCode,
+      this.isDownIcon,
+      this.initialSelection,
+      this.showEnglishName,
+      this.codeColor = Colors.black});
 }
