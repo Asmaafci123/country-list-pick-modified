@@ -30,5 +30,5 @@ class CountryTheme {
       this.isDownIcon,
       this.initialSelection,
       this.showEnglishName,
-      this.codeColor = Colors.black});
+      this.codeColor = Colors.red});
 }
